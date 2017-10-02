@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */; };
+		E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B41F769204004F3930 /* TypeAlias.swift */; };
+		E532C3B91F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */; };
+		E532C3BB1F76D8AD004F3930 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532C3BA1F76D8AD004F3930 /* ShopCell.swift */; };
+		E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6941F75D58C007E9C9F /* AppDelegate.swift */; };
+		E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */; };
+		E546F69A1F75D58C007E9C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E546F6981F75D58C007E9C9F /* Main.storyboard */; };
+		E546F69C1F75D58C007E9C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E546F69B1F75D58C007E9C9F /* Assets.xcassets */; };
+		E546F69F1F75D58C007E9C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E546F69D1F75D58C007E9C9F /* LaunchScreen.storyboard */; };
+		E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B71F765CB4007E9C9F /* Shop.swift */; };
+		E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6B91F765F39007E9C9F /* Shops.swift */; };
+		E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546F6BB1F766277007E9C9F /* ShopsTest.swift */; };
+		E54730E51F803D8500ACDAB8 /* shopAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54730E41F803D8500ACDAB8 /* shopAnnotation.swift */; };
+		E54730E71F803EF300ACDAB8 /* activityAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54730E61F803EF300ACDAB8 /* activityAnnotation.swift */; };
+		E54730F11F811DE800ACDAB8 /* ShopsCollectionViewController+MapsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54730F01F811DE800ACDAB8 /* ShopsCollectionViewController+MapsExtension.swift */; };
+		E54730F31F8130F700ACDAB8 /* ShopFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54730F21F8130F700ACDAB8 /* ShopFetchedResultsController.swift */; };
+		E54730F71F813AB700ACDAB8 /* ActivityFetchedResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54730F61F813AB700ACDAB8 /* ActivityFetchedResultsController.swift */; };
+		E54730F91F8140F200ACDAB8 /* ActivitiesCollectionViewController+MapsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54730F81F8140F200ACDAB8 /* ActivitiesCollectionViewController+MapsExtension.swift */; };
+		E55F60581F76F8AB008A670B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E55F60571F76F8AB008A670B /* Podfile */; };
+		E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A78FB1F76E56C00008775 /* MapKit.framework */; };
+		E57E79091F7F108B0099FB2B /* CheckConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E79081F7F108B0099FB2B /* CheckConnection.swift */; };
+		E57E790B1F7F21690099FB2B /* DownloadImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57E790A1F7F21690099FB2B /* DownloadImageFromUrl.swift */; };
+		E5BD7B811F79A08F00821562 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BD7B801F79A08F00821562 /* CoreData.framework */; };
+		E5BD7B841F79A0EB00821562 /* MadridShops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */; };
+		E5BD7B861F79A80C00821562 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B851F79A80C00821562 /* CoreDataStack.swift */; };
+		E5BD7B891F7ADB8D00821562 /* SaveAllShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B881F7ADB8D00821562 /* SaveAllShopsInteractor.swift */; };
+		E5BD7B8B1F7ADBA100821562 /* SaveAllActivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B8A1F7ADBA100821562 /* SaveAllActivitiesInteractor.swift */; };
+		E5BD7B8D1F7ADEE300821562 /* SaveAllShopsInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B8C1F7ADEE300821562 /* SaveAllShopsInteractorImplementation.swift */; };
+		E5BD7B8F1F7ADF1700821562 /* SaveAllActivitiesInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B8E1F7ADF1700821562 /* SaveAllActivitiesInteractorImplementation.swift */; };
+		E5BD7B921F7C237000821562 /* MapShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B911F7C237000821562 /* MapShops.swift */; };
+		E5BD7B941F7C357D00821562 /* MapActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BD7B931F7C357D00821562 /* MapActivities.swift */; };
+		E5CE1C321F7C6C81006A863D /* ExecuteOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C311F7C6C81006A863D /* ExecuteOnceInteractor.swift */; };
+		E5CE1C341F7C6D1D006A863D /* SetExecutedOnceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C331F7C6D1D006A863D /* SetExecutedOnceInteractor.swift */; };
+		E5CE1C361F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C351F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift */; };
+		E5CE1C381F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CE1C371F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift */; };
+		E5F3B00D1F771F4C008F5EBB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B00C1F771F4C008F5EBB /* MainViewController.swift */; };
+		E5F3B00F1F77AD88008F5EBB /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B00E1F77AD88008F5EBB /* Activity.swift */; };
+		E5F3B0111F77B5A7008F5EBB /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0101F77B5A7008F5EBB /* Activities.swift */; };
+		E5F3B0131F77BA02008F5EBB /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0121F77BA02008F5EBB /* ActivityCell.swift */; };
+		E5F3B0151F77BA73008F5EBB /* ActivitiesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0141F77BA73008F5EBB /* ActivitiesCollectionViewController.swift */; };
+		E5F3B0171F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0161F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift */; };
+		E5F3B01B1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B01A1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift */; };
+		E5F3B0221F78141A008F5EBB /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0211F78141A008F5EBB /* JSONParser.swift */; };
+		E5F3B0241F781A40008F5EBB /* DownloadAllShopsInteractorNSURLSessionImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0231F781A40008F5EBB /* DownloadAllShopsInteractorNSURLSessionImplementation.swift */; };
+		E5F3B0261F781A95008F5EBB /* DownloadAllActivitiesInteractorNSURLSessionImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0251F781A95008F5EBB /* DownloadAllActivitiesInteractorNSURLSessionImplementation.swift */; };
+		E5F3B0281F781CD4008F5EBB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0271F781CD4008F5EBB /* Constants.swift */; };
+		E5F3B02A1F782C42008F5EBB /* ShopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B0291F782C42008F5EBB /* ShopDetailViewController.swift */; };
+		E5F3B02C1F782C66008F5EBB /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B02B1F782C66008F5EBB /* ActivityDetailViewController.swift */; };
+		E5F3B02F1F7838E0008F5EBB /* String+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B02E1F7838E0008F5EBB /* String+Image.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E546F6A61F75D58C007E9C9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E546F6891F75D58C007E9C9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E546F6901F75D58C007E9C9F;
+			remoteInfo = MadridShops;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractor.swift; sourceTree = "<group>"; };
+		E532C3B41F769204004F3930 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShopsCollectionViewController+CollectionExtension.swift"; sourceTree = "<group>"; };
+		E532C3BA1F76D8AD004F3930 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		E546F6911F75D58C007E9C9F /* MadridShops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadridShops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E546F6941F75D58C007E9C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsCollectionViewController.swift; sourceTree = "<group>"; };
+		E546F6991F75D58C007E9C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E546F69B1F75D58C007E9C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E546F69E1F75D58C007E9C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E546F6A01F75D58C007E9C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E546F6A51F75D58C007E9C9F /* MadridShopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadridShopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E546F6AB1F75D58C007E9C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E546F6B71F765CB4007E9C9F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		E546F6B91F765F39007E9C9F /* Shops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shops.swift; sourceTree = "<group>"; };
+		E546F6BB1F766277007E9C9F /* ShopsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsTest.swift; sourceTree = "<group>"; };
+		E54730E41F803D8500ACDAB8 /* shopAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopAnnotation.swift; sourceTree = "<group>"; };
+		E54730E61F803EF300ACDAB8 /* activityAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityAnnotation.swift; sourceTree = "<group>"; };
+		E54730F01F811DE800ACDAB8 /* ShopsCollectionViewController+MapsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShopsCollectionViewController+MapsExtension.swift"; sourceTree = "<group>"; };
+		E54730F21F8130F700ACDAB8 /* ShopFetchedResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShopFetchedResultsController.swift; path = MadridShops/Controller/Shops/ShopFetchedResultsController.swift; sourceTree = SOURCE_ROOT; };
+		E54730F61F813AB700ACDAB8 /* ActivityFetchedResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFetchedResultsController.swift; sourceTree = "<group>"; };
+		E54730F81F8140F200ACDAB8 /* ActivitiesCollectionViewController+MapsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivitiesCollectionViewController+MapsExtension.swift"; sourceTree = "<group>"; };
+		E55F60571F76F8AB008A670B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E56A78FB1F76E56C00008775 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E57E79081F7F108B0099FB2B /* CheckConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckConnection.swift; sourceTree = "<group>"; };
+		E57E790A1F7F21690099FB2B /* DownloadImageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageFromUrl.swift; sourceTree = "<group>"; };
+		E5BD7B801F79A08F00821562 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MadridShops.xcdatamodel; sourceTree = "<group>"; };
+		E5BD7B851F79A80C00821562 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E5BD7B881F7ADB8D00821562 /* SaveAllShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllShopsInteractor.swift; sourceTree = "<group>"; };
+		E5BD7B8A1F7ADBA100821562 /* SaveAllActivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllActivitiesInteractor.swift; sourceTree = "<group>"; };
+		E5BD7B8C1F7ADEE300821562 /* SaveAllShopsInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllShopsInteractorImplementation.swift; sourceTree = "<group>"; };
+		E5BD7B8E1F7ADF1700821562 /* SaveAllActivitiesInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAllActivitiesInteractorImplementation.swift; sourceTree = "<group>"; };
+		E5BD7B911F7C237000821562 /* MapShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShops.swift; sourceTree = "<group>"; };
+		E5BD7B931F7C357D00821562 /* MapActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapActivities.swift; sourceTree = "<group>"; };
+		E5CE1C311F7C6C81006A863D /* ExecuteOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractor.swift; sourceTree = "<group>"; };
+		E5CE1C331F7C6D1D006A863D /* SetExecutedOnceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractor.swift; sourceTree = "<group>"; };
+		E5CE1C351F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExecutedOnceInteractorimplementation.swift; sourceTree = "<group>"; };
+		E5CE1C371F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteOnceInteractorImplementation.swift; sourceTree = "<group>"; };
+		E5F3B00C1F771F4C008F5EBB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E5F3B00E1F77AD88008F5EBB /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		E5F3B0101F77B5A7008F5EBB /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		E5F3B0121F77BA02008F5EBB /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		E5F3B0141F77BA73008F5EBB /* ActivitiesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCollectionViewController.swift; sourceTree = "<group>"; };
+		E5F3B0161F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractor.swift; sourceTree = "<group>"; };
+		E5F3B01A1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActivitiesCollectionViewController+CollectionExtension.swift"; sourceTree = "<group>"; };
+		E5F3B0211F78141A008F5EBB /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		E5F3B0231F781A40008F5EBB /* DownloadAllShopsInteractorNSURLSessionImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllShopsInteractorNSURLSessionImplementation.swift; sourceTree = "<group>"; };
+		E5F3B0251F781A95008F5EBB /* DownloadAllActivitiesInteractorNSURLSessionImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllActivitiesInteractorNSURLSessionImplementation.swift; sourceTree = "<group>"; };
+		E5F3B0271F781CD4008F5EBB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E5F3B0291F782C42008F5EBB /* ShopDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailViewController.swift; sourceTree = "<group>"; };
+		E5F3B02B1F782C66008F5EBB /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		E5F3B02E1F7838E0008F5EBB /* String+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Image.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E546F68E1F75D58C007E9C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5BD7B811F79A08F00821562 /* CoreData.framework in Frameworks */,
+				E56A78FC1F76E56C00008775 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E546F6A21F75D58C007E9C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E532C3B11F768BFC004F3930 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7B871F7ADAF500821562 /* CacheInteractors */,
+				E5F3B0161F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift */,
+				E532C3B21F768CB2004F3930 /* DownloadAllShopsInteractor.swift */,
+				E5F3B0231F781A40008F5EBB /* DownloadAllShopsInteractorNSURLSessionImplementation.swift */,
+				E5F3B0251F781A95008F5EBB /* DownloadAllActivitiesInteractorNSURLSessionImplementation.swift */,
+				E5CE1C311F7C6C81006A863D /* ExecuteOnceInteractor.swift */,
+				E5CE1C331F7C6D1D006A863D /* SetExecutedOnceInteractor.swift */,
+				E5CE1C351F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift */,
+				E5CE1C371F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		E546F6881F75D58C007E9C9F = {
+			isa = PBXGroup;
+			children = (
+				E55F60571F76F8AB008A670B /* Podfile */,
+				E546F6931F75D58C007E9C9F /* MadridShops */,
+				E546F6A81F75D58C007E9C9F /* MadridShopsTests */,
+				E546F6921F75D58C007E9C9F /* Products */,
+				E56A78FA1F76E56C00008775 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E546F6921F75D58C007E9C9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E546F6911F75D58C007E9C9F /* MadridShops.app */,
+				E546F6A51F75D58C007E9C9F /* MadridShopsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E546F6931F75D58C007E9C9F /* MadridShops */ = {
+			isa = PBXGroup;
+			children = (
+				E546F6941F75D58C007E9C9F /* AppDelegate.swift */,
+				E546F69B1F75D58C007E9C9F /* Assets.xcassets */,
+				E5F3B02D1F78386A008F5EBB /* Utils */,
+				E546F6B61F75D647007E9C9F /* Model */,
+				E546F6B51F75D633007E9C9F /* View */,
+				E546F6B41F75D629007E9C9F /* Controller */,
+				E546F6A01F75D58C007E9C9F /* Info.plist */,
+			);
+			path = MadridShops;
+			sourceTree = "<group>";
+		};
+		E546F6A81F75D58C007E9C9F /* MadridShopsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E546F6AB1F75D58C007E9C9F /* Info.plist */,
+				E546F6BB1F766277007E9C9F /* ShopsTest.swift */,
+			);
+			path = MadridShopsTests;
+			sourceTree = "<group>";
+		};
+		E546F6B41F75D629007E9C9F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5F3B00C1F771F4C008F5EBB /* MainViewController.swift */,
+				E54730F51F813A7F00ACDAB8 /* Activities */,
+				E54730F41F8137E900ACDAB8 /* Shops */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E546F6B51F75D633007E9C9F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E546F6981F75D58C007E9C9F /* Main.storyboard */,
+				E546F69D1F75D58C007E9C9F /* LaunchScreen.storyboard */,
+				E532C3BA1F76D8AD004F3930 /* ShopCell.swift */,
+				E5F3B0121F77BA02008F5EBB /* ActivityCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E546F6B61F75D647007E9C9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7B901F7C232F00821562 /* Mappers */,
+				E5F3B0201F7813F8008F5EBB /* JsonParsers */,
+				E532C3B11F768BFC004F3930 /* Interactors */,
+				E54730E41F803D8500ACDAB8 /* shopAnnotation.swift */,
+				E54730E61F803EF300ACDAB8 /* activityAnnotation.swift */,
+				E546F6B71F765CB4007E9C9F /* Shop.swift */,
+				E546F6B91F765F39007E9C9F /* Shops.swift */,
+				E5F3B00E1F77AD88008F5EBB /* Activity.swift */,
+				E5F3B0101F77B5A7008F5EBB /* Activities.swift */,
+				E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E54730F41F8137E900ACDAB8 /* Shops */ = {
+			isa = PBXGroup;
+			children = (
+				E546F6961F75D58C007E9C9F /* ShopsCollectionViewController.swift */,
+				E54730F01F811DE800ACDAB8 /* ShopsCollectionViewController+MapsExtension.swift */,
+				E532C3B81F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift */,
+				E5F3B0291F782C42008F5EBB /* ShopDetailViewController.swift */,
+				E54730F21F8130F700ACDAB8 /* ShopFetchedResultsController.swift */,
+			);
+			path = Shops;
+			sourceTree = "<group>";
+		};
+		E54730F51F813A7F00ACDAB8 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				E5F3B0141F77BA73008F5EBB /* ActivitiesCollectionViewController.swift */,
+				E54730F81F8140F200ACDAB8 /* ActivitiesCollectionViewController+MapsExtension.swift */,
+				E5F3B01A1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift */,
+				E5F3B02B1F782C66008F5EBB /* ActivityDetailViewController.swift */,
+				E54730F61F813AB700ACDAB8 /* ActivityFetchedResultsController.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		E56A78FA1F76E56C00008775 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7B801F79A08F00821562 /* CoreData.framework */,
+				E56A78FB1F76E56C00008775 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5BD7B871F7ADAF500821562 /* CacheInteractors */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7B881F7ADB8D00821562 /* SaveAllShopsInteractor.swift */,
+				E5BD7B8A1F7ADBA100821562 /* SaveAllActivitiesInteractor.swift */,
+				E5BD7B8C1F7ADEE300821562 /* SaveAllShopsInteractorImplementation.swift */,
+				E5BD7B8E1F7ADF1700821562 /* SaveAllActivitiesInteractorImplementation.swift */,
+			);
+			path = CacheInteractors;
+			sourceTree = "<group>";
+		};
+		E5BD7B901F7C232F00821562 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7B911F7C237000821562 /* MapShops.swift */,
+				E5BD7B931F7C357D00821562 /* MapActivities.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		E5F3B0201F7813F8008F5EBB /* JsonParsers */ = {
+			isa = PBXGroup;
+			children = (
+				E5F3B0211F78141A008F5EBB /* JSONParser.swift */,
+			);
+			path = JsonParsers;
+			sourceTree = "<group>";
+		};
+		E5F3B02D1F78386A008F5EBB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E5BD7B851F79A80C00821562 /* CoreDataStack.swift */,
+				E532C3B41F769204004F3930 /* TypeAlias.swift */,
+				E5F3B0271F781CD4008F5EBB /* Constants.swift */,
+				E5F3B02E1F7838E0008F5EBB /* String+Image.swift */,
+				E57E79081F7F108B0099FB2B /* CheckConnection.swift */,
+				E57E790A1F7F21690099FB2B /* DownloadImageFromUrl.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E546F6901F75D58C007E9C9F /* MadridShops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E546F6AE1F75D58C007E9C9F /* Build configuration list for PBXNativeTarget "MadridShops" */;
+			buildPhases = (
+				E546F68D1F75D58C007E9C9F /* Sources */,
+				E546F68E1F75D58C007E9C9F /* Frameworks */,
+				E546F68F1F75D58C007E9C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MadridShops;
+			productName = MadridShops;
+			productReference = E546F6911F75D58C007E9C9F /* MadridShops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E546F6A41F75D58C007E9C9F /* MadridShopsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E546F6B11F75D58C007E9C9F /* Build configuration list for PBXNativeTarget "MadridShopsTests" */;
+			buildPhases = (
+				E546F6A11F75D58C007E9C9F /* Sources */,
+				E546F6A21F75D58C007E9C9F /* Frameworks */,
+				E546F6A31F75D58C007E9C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E546F6A71F75D58C007E9C9F /* PBXTargetDependency */,
+			);
+			name = MadridShopsTests;
+			productName = MadridShopsTests;
+			productReference = E546F6A51F75D58C007E9C9F /* MadridShopsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E546F6891F75D58C007E9C9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Fabio Gomez";
+				TargetAttributes = {
+					E546F6901F75D58C007E9C9F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E546F6A41F75D58C007E9C9F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E546F6901F75D58C007E9C9F;
+					};
+				};
+			};
+			buildConfigurationList = E546F68C1F75D58C007E9C9F /* Build configuration list for PBXProject "MadridShops" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E546F6881F75D58C007E9C9F;
+			productRefGroup = E546F6921F75D58C007E9C9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E546F6901F75D58C007E9C9F /* MadridShops */,
+				E546F6A41F75D58C007E9C9F /* MadridShopsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E546F68F1F75D58C007E9C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E546F69F1F75D58C007E9C9F /* LaunchScreen.storyboard in Resources */,
+				E546F69C1F75D58C007E9C9F /* Assets.xcassets in Resources */,
+				E55F60581F76F8AB008A670B /* Podfile in Resources */,
+				E546F69A1F75D58C007E9C9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E546F6A31F75D58C007E9C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E546F68D1F75D58C007E9C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E532C3B51F769204004F3930 /* TypeAlias.swift in Sources */,
+				E532C3BB1F76D8AD004F3930 /* ShopCell.swift in Sources */,
+				E5BD7B8B1F7ADBA100821562 /* SaveAllActivitiesInteractor.swift in Sources */,
+				E5F3B0221F78141A008F5EBB /* JSONParser.swift in Sources */,
+				E5BD7B841F79A0EB00821562 /* MadridShops.xcdatamodeld in Sources */,
+				E54730E71F803EF300ACDAB8 /* activityAnnotation.swift in Sources */,
+				E54730F71F813AB700ACDAB8 /* ActivityFetchedResultsController.swift in Sources */,
+				E546F6B81F765CB4007E9C9F /* Shop.swift in Sources */,
+				E5BD7B891F7ADB8D00821562 /* SaveAllShopsInteractor.swift in Sources */,
+				E5F3B0261F781A95008F5EBB /* DownloadAllActivitiesInteractorNSURLSessionImplementation.swift in Sources */,
+				E5BD7B8F1F7ADF1700821562 /* SaveAllActivitiesInteractorImplementation.swift in Sources */,
+				E546F6971F75D58C007E9C9F /* ShopsCollectionViewController.swift in Sources */,
+				E5BD7B921F7C237000821562 /* MapShops.swift in Sources */,
+				E57E79091F7F108B0099FB2B /* CheckConnection.swift in Sources */,
+				E546F6951F75D58C007E9C9F /* AppDelegate.swift in Sources */,
+				E5CE1C361F7CF7A7006A863D /* SetExecutedOnceInteractorimplementation.swift in Sources */,
+				E5CE1C381F7CFA64006A863D /* ExecuteOnceInteractorImplementation.swift in Sources */,
+				E546F6BA1F765F39007E9C9F /* Shops.swift in Sources */,
+				E5F3B0131F77BA02008F5EBB /* ActivityCell.swift in Sources */,
+				E5F3B02C1F782C66008F5EBB /* ActivityDetailViewController.swift in Sources */,
+				E5F3B0281F781CD4008F5EBB /* Constants.swift in Sources */,
+				E5F3B0241F781A40008F5EBB /* DownloadAllShopsInteractorNSURLSessionImplementation.swift in Sources */,
+				E5BD7B941F7C357D00821562 /* MapActivities.swift in Sources */,
+				E5F3B02F1F7838E0008F5EBB /* String+Image.swift in Sources */,
+				E532C3B91F76CD11004F3930 /* ShopsCollectionViewController+CollectionExtension.swift in Sources */,
+				E54730F31F8130F700ACDAB8 /* ShopFetchedResultsController.swift in Sources */,
+				E5BD7B861F79A80C00821562 /* CoreDataStack.swift in Sources */,
+				E5BD7B8D1F7ADEE300821562 /* SaveAllShopsInteractorImplementation.swift in Sources */,
+				E5F3B0151F77BA73008F5EBB /* ActivitiesCollectionViewController.swift in Sources */,
+				E5F3B02A1F782C42008F5EBB /* ShopDetailViewController.swift in Sources */,
+				E5F3B0171F77BAEC008F5EBB /* DownloadAllActivitiesInteractor.swift in Sources */,
+				E5F3B0111F77B5A7008F5EBB /* Activities.swift in Sources */,
+				E532C3B31F768CB2004F3930 /* DownloadAllShopsInteractor.swift in Sources */,
+				E5CE1C321F7C6C81006A863D /* ExecuteOnceInteractor.swift in Sources */,
+				E54730F91F8140F200ACDAB8 /* ActivitiesCollectionViewController+MapsExtension.swift in Sources */,
+				E57E790B1F7F21690099FB2B /* DownloadImageFromUrl.swift in Sources */,
+				E5F3B00F1F77AD88008F5EBB /* Activity.swift in Sources */,
+				E54730F11F811DE800ACDAB8 /* ShopsCollectionViewController+MapsExtension.swift in Sources */,
+				E54730E51F803D8500ACDAB8 /* shopAnnotation.swift in Sources */,
+				E5CE1C341F7C6D1D006A863D /* SetExecutedOnceInteractor.swift in Sources */,
+				E5F3B01B1F77BDF9008F5EBB /* ActivitiesCollectionViewController+CollectionExtension.swift in Sources */,
+				E5F3B00D1F771F4C008F5EBB /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E546F6A11F75D58C007E9C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E546F6BC1F766277007E9C9F /* ShopsTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E546F6A71F75D58C007E9C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E546F6901F75D58C007E9C9F /* MadridShops */;
+			targetProxy = E546F6A61F75D58C007E9C9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E546F6981F75D58C007E9C9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E546F6991F75D58C007E9C9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E546F69D1F75D58C007E9C9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E546F69E1F75D58C007E9C9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E546F6AC1F75D58C007E9C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E546F6AD1F75D58C007E9C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E546F6AF1F75D58C007E9C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NW392JLHHF;
+				INFOPLIST_FILE = MadridShops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fgp.MadridShops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E546F6B01F75D58C007E9C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NW392JLHHF;
+				INFOPLIST_FILE = MadridShops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fgp.MadridShops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E546F6B21F75D58C007E9C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UC7757W7N;
+				INFOPLIST_FILE = MadridShopsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fgp.MadridShopsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadridShops.app/MadridShops";
+			};
+			name = Debug;
+		};
+		E546F6B31F75D58C007E9C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UC7757W7N;
+				INFOPLIST_FILE = MadridShopsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fgp.MadridShopsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadridShops.app/MadridShops";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E546F68C1F75D58C007E9C9F /* Build configuration list for PBXProject "MadridShops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E546F6AC1F75D58C007E9C9F /* Debug */,
+				E546F6AD1F75D58C007E9C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E546F6AE1F75D58C007E9C9F /* Build configuration list for PBXNativeTarget "MadridShops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E546F6AF1F75D58C007E9C9F /* Debug */,
+				E546F6B01F75D58C007E9C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E546F6B11F75D58C007E9C9F /* Build configuration list for PBXNativeTarget "MadridShopsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E546F6B21F75D58C007E9C9F /* Debug */,
+				E546F6B31F75D58C007E9C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5BD7B821F79A0EB00821562 /* MadridShops.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */,
+			);
+			currentVersion = E5BD7B831F79A0EB00821562 /* MadridShops.xcdatamodel */;
+			path = MadridShops.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E546F6891F75D58C007E9C9F /* Project object */;
+}
